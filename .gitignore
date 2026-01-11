@@ -1,0 +1,28 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Dependencias
+node_modules/
+vendor/
+.env.local
+
+# Build / dist
+dist/
+build/
+target/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Archivos sensibles
+.env
+*.key
+*.pem
