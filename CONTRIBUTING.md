@@ -1,8 +1,10 @@
 # Guía de Contribución
 
-Este proyecto utiliza **Conventional Commits** para mantener un historial claro y profesional.
+Este proyecto utiliza **Conventional Commits** para mantener un historial claro y 
 
-## Formato de commit
-
-Cada commit debe seguir este formato:
-
+# Guía de Contribución
+## Conventional Commits
+Formato: `<tipo>[scope]: <descripción>`
+### Tipos: feat, fix, docs, style, refactor, test, chore
+## Firma de Commits
+Todos los commits deben estar firmados con GPG.
