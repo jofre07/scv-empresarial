@@ -17,3 +17,6 @@ técnicas avanzadas de Git y control de versiones.
 - GPG (firmas criptográficas)
 - GitHub Actions (CI/CD)
 
+
+## versiones
+- v1.0.0
