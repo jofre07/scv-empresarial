@@ -18,5 +18,5 @@ técnicas avanzadas de Git y control de versiones.
 - GitHub Actions (CI/CD)
 
 
-## versiones
+## versiones de proyecto
 - v1.0.0
