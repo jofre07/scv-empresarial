@@ -1,0 +1,14 @@
+# CODEOWNERS - scv-empresarial
+# Propietarios globales
+* @jofre07 @vicentevera
+
+# Propietarios por área
+/src/ @jofre07
+/docs/ @vicentevera
+/tests/ @jofre07 @vicentevera
+
+# Archivos críticos (requieren ambos reviewers)
+CONTRIBUTING.md @jofre07 @vicentevera
+README.md @jofre07 @vicentevera
+
+
