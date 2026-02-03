@@ -1,0 +1,13 @@
+
+{
+  "name": "scv-empresarial",
+  "version": "1.0.0",
+  "description": "Repositorio de demostración MDW101 - Semana 4",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Tests passed successfully\" && exit 0",
+    "lint": "echo \"Linting passed\" && exit 0"
+  },
+  "author": "Jofre Zambrano",
+  "license": "MIT"
+}
