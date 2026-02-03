@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# ============================================
+# Hook: pre-commit
+# Valida que no haya TODOs ni FIXMEs
+# MDW101 - Semana 4
+# ============================================
+
+echo "🔍 Ejecutando validaciones pre-commit..."
+
+# Buscar TODOs y FIXMEs en archivos staged
+FOUND=$(git diff --cached --name-only | xargs grep -l -E "(TODO|FIXME)" 2>/dev/null || true)
+
+if [ -n "$FOUND" ]; then
+    echo ""
+    echo "❌ ERROR: Se encontraron TODOs o FIXMEs en los siguientes archivos:"
+    echo ""
+    for file in $FOUND; do
+        echo "  📄 $file"
+        git diff --cached "$file" | grep -n -E "(TODO|FIXME)" | head -5
+    done
+    echo ""
+    echo "Por favor, resuelve los TODOs antes de hacer commit."
+    echo ""
+    exit 1
+fi
+
+echo "✅ Validaciones completadas - No se encontraron TODOs"
+exit 0
